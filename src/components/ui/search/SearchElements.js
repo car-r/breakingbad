@@ -4,4 +4,5 @@ export const SearchBoxInput = styled.input`
     margin: 2em;
     padding: .5rem;
     font-size: 1.3rem;
+    margin-top: 0;
 `

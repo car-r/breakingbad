@@ -5,4 +5,5 @@ export const CardGrid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 2rem;
     padding-bottom: 3em;
+    margin: 2em;
 `

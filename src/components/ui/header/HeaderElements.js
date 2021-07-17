@@ -5,5 +5,6 @@ export const HeaderContainer = styled.header`
 `
 
 export const HeaderImage = styled.img`
+    margin-top: 2em;
     width: 200px;
 `
