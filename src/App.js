@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/ui/header';
 import CharacterGrid from './components/characters/character-grid';
 import Search from './components/ui/search';
+import Footer from './components/ui/footer';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
       <Header />
       <Search placeholder={"search characters"} getQuery={(q) => setQuery(q)}/>
       <CharacterGrid isLoading={isLoading} items={items}/>
-      <h1>Breaking Bad</h1>
+      <Footer />
     </div>
   );
 }

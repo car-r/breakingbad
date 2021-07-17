@@ -6,6 +6,7 @@ export const Card = styled.div`
     height: 300px;
     width: 260px;
     perspective: 1000px;
+    margin: 0 auto;
 `
 
 
