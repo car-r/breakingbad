@@ -4,6 +4,7 @@ export const Card = styled.div`
     cursor: pointer;
     background-color: transparent;
     height: 300px;
+    width: 260px;
     perspective: 1000px;
 `
 
@@ -31,7 +32,7 @@ export const CardFront = styled.div`
 
 export const CardBack = styled.div`
     position: absolute;
-    width: 100%;
+    width: 260px;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -42,7 +43,7 @@ export const CardBack = styled.div`
 `
 
 export const CardImage = styled.img`
-    width: 250px;
+    width: 260px;
     height: 300px;
     object-fit: cover;
 `
@@ -55,7 +56,7 @@ export const CardBackName = styled.p`
 export const CardBackItemContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid white;
     margin-bottom: .75em;
