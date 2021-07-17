@@ -9,6 +9,7 @@ import Search from './components/ui/search';
 function App() {
   const [items, setItems] = useState([])
   const [query, setQuery] = useState('')
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     // fetch items from API with async await and axios
@@ -18,6 +19,7 @@ function App() {
       )
       console.log(result.data)
       setItems(result.data)
+      setIsLoading(false)
     }
     fetchItems()
   }, [query])
@@ -26,7 +28,7 @@ function App() {
     <div className="App">
       <Header />
       <Search placeholder={"search characters"} getQuery={(q) => setQuery(q)}/>
-      <CharacterGrid items={items}/>
+      <CharacterGrid isLoading={isLoading} items={items}/>
       <h1>Breaking Bad</h1>
     </div>
   );
